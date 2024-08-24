@@ -1,0 +1,33 @@
+let cartCount = 0;
+
+function openTab(tabId) {
+  // Remove active class from all tabs
+  const tabContents = document.querySelectorAll('.tab-content');
+  tabContents.forEach(content => content.classList.remove('active'));
+
+  const tabButtons = document.querySelectorAll('.tab-button');
+  tabButtons.forEach(button => button.classList.remove('active'));
+
+  // Show the clicked tab and activate its button
+  document.getElementById(tabId).classList.add('active');
+  const button = Array.from(tabButtons).find(btn => btn.textContent.includes(tabId));
+  if (button) {
+    button.classList.add('active');
+  }
+}
+
+function addToCart(itemName) {
+  cartCount++;
+  document.getElementById('cart-count').textContent = cartCount;
+
+  const cartItems = document.getElementById('cart-items');
+  if (cartCount === 1) {
+    cartItems.innerHTML = `<p>1 item: ${itemName}</p>`;
+  } else {
+    const existingItems = cartItems.innerHTML;
+    cartItems.innerHTML = `${existingItems}<p>${cartCount} itens: ${itemName}</p>`;
+  }
+}
+
+// Open the first tab by default
+document.addEventListener('DOMContentLoaded', () => openTab('japanese'));
