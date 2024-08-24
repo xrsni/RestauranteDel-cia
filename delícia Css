@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #f3ebeb;
     div {
     display: table-cell;
     vertical-align: middle;
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #ff6f61; /* Cor semelhante ao iFood */
+    background-color: #f75c4dfd; /* Cor semelhante ao iFood */
     color: #fff;
     padding: 15px 0;
     text-align: center;
@@ -28,7 +28,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    
+
 }
 
 nav ul li {
@@ -37,7 +37,7 @@ nav ul li {
 
 .tab-button {
     background: #fff;
-    border: 2px solid #ff6f61; /* Cor semelhante ao iFood */
+    border: 2px solid #f57569; /* Cor semelhante ao iFood */
     color: #ff6f61;
     border-radius: 8px;
     padding: 10px 20px;
@@ -67,7 +67,7 @@ nav ul li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin-bottom: 20px;
-     border: solid #fff;
+     border: solid rgb(241, 104, 104);
     border-radius: 10px;
 }
 
@@ -76,7 +76,7 @@ nav ul li {
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
-   
+
 
 }
 
@@ -95,7 +95,7 @@ nav ul li {
 }
 
 button {
-    background-color: #ff6f61; /* Cor semelhante ao iFood */
+    background-color: #180d0c; /* Cor semelhante ao iFood */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -117,4 +117,3 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
