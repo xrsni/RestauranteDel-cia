@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Seu Nome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="hero" id="home">
+            <h1>Bem-vindo ao meu portfólio!</h1>
+            <p>Eu sou Maycon Benicio Cantanhede De Sa, um desenvolvedor/designer especializado em cria e desenvolver site inicial.</p>
+            <img src="sua-imagem.jpg" alt="Sua Imagem">
+        </div>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou Maycon Benicio Cantanhede De Sa, um Estudante com experiência em desenvolvedor de site. Tenho  Interesses  Profissionais].</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projeto">
+            <h3>Projeto 1</h3>
+           <a href="https://jsitor.com/preview/Q2MD9KuhNS">Maycon_lanches.com.br</a>
+            <p>Descrição detalhada do Projeto 1.</p>
+        </div>
+        <div class="projeto">
+            <h3>Projeto 2</h3>
+            <img src="projeto2.jpg" alt="Projeto 2">
+            <p>Descrição detalhada do Projeto 2.</p>
+        </div>
+        <!-- Adicione mais projetos conforme necessário -->
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>aprendizado rapido 1</li>
+            <li>entendimento rapido das coisa 2</li>
+            <!-- Adicione mais habilidades conforme necessário -->
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="contatoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
